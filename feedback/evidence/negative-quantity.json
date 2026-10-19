@@ -1,0 +1,119 @@
+{
+  "sdk": "0.32.1",
+  "chainId": 50383,
+  "scope": "read-only public SDK preview calls; freshly generated address; no signer supplied",
+  "account": "0xdFE86a1eD950A5FBd3522dF427D4676108D9b886",
+  "cases": [
+    {
+      "name": "positive-control",
+      "input": {
+        "quantity": "100000",
+        "price": "100000000000000000000000"
+      },
+      "value": {
+        "priceable": true,
+        "asOfBlock": "28014940",
+        "effectiveImfBps": "500",
+        "markPrice": "81944484320228463500000",
+        "unlockedCollateral": "0",
+        "equity": "0",
+        "imRequirement": "0",
+        "wallet": null,
+        "fundingPayer": null,
+        "mainWalletCapacity": null,
+        "increasingQuantity": "100000",
+        "reducingQuantity": "0",
+        "lockAmount": "23055515679771536500",
+        "initialMarginPortion": "5000000000000000000",
+        "adverseGapPortion": "18055515679771536500",
+        "leverageSurcharge": "0",
+        "feeHeadroom": "0",
+        "topUpRequired": "0",
+        "walletCoversTopUp": true,
+        "ownWalletPull": "0",
+        "mainWalletPull": "0",
+        "mainFundingBlocked": false,
+        "hasCollateralForLock": false,
+        "meetsInitialMargin": false,
+        "voucherBlocked": false,
+        "restrictedBlocked": false,
+        "isolationBlocked": false,
+        "sufficient": false
+      }
+    },
+    {
+      "name": "negative-quantity",
+      "input": {
+        "quantity": "-100000",
+        "price": "100000000000000000000000"
+      },
+      "value": {
+        "priceable": true,
+        "asOfBlock": "28014940",
+        "effectiveImfBps": "500",
+        "markPrice": "81944484320228463500000",
+        "unlockedCollateral": "0",
+        "equity": "0",
+        "imRequirement": "0",
+        "wallet": null,
+        "fundingPayer": null,
+        "mainWalletCapacity": null,
+        "increasingQuantity": "-100000",
+        "reducingQuantity": "0",
+        "lockAmount": "-23055515679771536498",
+        "initialMarginPortion": "-4999999999999999999",
+        "adverseGapPortion": "-18055515679771536499",
+        "leverageSurcharge": "0",
+        "feeHeadroom": "0",
+        "topUpRequired": "0",
+        "walletCoversTopUp": true,
+        "ownWalletPull": "0",
+        "mainWalletPull": "0",
+        "mainFundingBlocked": false,
+        "hasCollateralForLock": true,
+        "meetsInitialMargin": true,
+        "voucherBlocked": false,
+        "restrictedBlocked": false,
+        "isolationBlocked": false,
+        "sufficient": true
+      }
+    },
+    {
+      "name": "zero-quantity",
+      "input": {
+        "quantity": "0",
+        "price": "100000000000000000000000"
+      },
+      "value": {
+        "priceable": true,
+        "asOfBlock": "28014940",
+        "effectiveImfBps": "500",
+        "markPrice": "81944484320228463500000",
+        "unlockedCollateral": "0",
+        "equity": "0",
+        "imRequirement": "0",
+        "wallet": null,
+        "fundingPayer": null,
+        "mainWalletCapacity": null,
+        "increasingQuantity": "0",
+        "reducingQuantity": "0",
+        "lockAmount": "0",
+        "initialMarginPortion": "0",
+        "adverseGapPortion": "0",
+        "leverageSurcharge": "0",
+        "feeHeadroom": "0",
+        "topUpRequired": "0",
+        "walletCoversTopUp": true,
+        "ownWalletPull": "0",
+        "mainWalletPull": "0",
+        "mainFundingBlocked": false,
+        "hasCollateralForLock": true,
+        "meetsInitialMargin": true,
+        "voucherBlocked": false,
+        "restrictedBlocked": false,
+        "isolationBlocked": false,
+        "sufficient": true
+      }
+    }
+  ]
+}

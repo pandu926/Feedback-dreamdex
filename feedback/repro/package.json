@@ -1,0 +1,9 @@
+{
+  "name": "dreamdex-sdk-feedback-reproductions",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@somnia-chain/markets-sdk": "0.32.1",
+    "viem": "2.57.7"
+  }
+}

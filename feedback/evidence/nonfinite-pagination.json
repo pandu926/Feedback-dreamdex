@@ -1,0 +1,30 @@
+{
+  "sdk": "0.32.1",
+  "chainId": 50383,
+  "indexerUrl": "https://hideki-dev.smk.somnia.host/v1/graphql",
+  "scope": {
+    "pool": "0x0f464d57c1fd839e4d87a408bbccdab8f77e6394",
+    "account": "0x38c01adebdd275f8bec6b41245d63e273b01bad4",
+    "status": [
+      "PENDING",
+      "TRIGGERED",
+      "TRIGGER_FAILED",
+      "CANCELLED"
+    ]
+  },
+  "note": "Read-only account/pool-scoped public SDK calls; no signer; non-finite inputs labeled as strings because JSON itself cannot represent them",
+  "results": [
+    {
+      "limit": "1",
+      "rows": 1
+    },
+    {
+      "limit": "NaN",
+      "rows": 4
+    },
+    {
+      "limit": "Infinity",
+      "rows": 4
+    }
+  ]
+}

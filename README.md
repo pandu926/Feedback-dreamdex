@@ -1,11 +1,12 @@
 # dreamDEX Perps SDK Feedback
 
-Two reproducible input-validation reports for `@somnia-chain/markets-sdk@0.32.1`, verified using read-only public SDK calls on Somnia Tokyo / Hideki testnet (chain ID `50383`).
+Three reproducible SDK and documentation reports for `@somnia-chain/markets-sdk@0.32.1`, verified using read-only public SDK calls on Somnia Tokyo / Hideki testnet (chain ID `50383`).
 
 | Report | Observed behavior | Proposed severity |
 | --- | --- | --- |
 | [Negative order quantity](feedback/001-negative-order-quantity-preview.md) | The margin preview returns a negative lock amount and `sufficient: true` for an invalid negative quantity. | normal |
 | [Non-finite stop-order pagination](feedback/002-nonfinite-stop-order-pagination.md) | `NaN` and `Infinity` remove the listing limit instead of producing an input error. | normal |
+| [WBTC one-shot documentation example](feedback/003-wbtc-one-shot-doc-example.md) | The example selects a missing market on Tokyo and dereferences the empty result. | normal |
 
 Each report includes reproduction steps, expected and actual results, evidence, and environment details. No transactions were submitted. These are SDK feedback reports; no unauthorized account access or fund loss has been demonstrated.
 
@@ -17,6 +18,7 @@ Use Node.js 20 or later. The recorded checks used Node.js 26.11.1.
 npm ci --prefix feedback/repro --ignore-scripts --registry=https://registry.npmjs.org
 node feedback/repro/negative-quantity.mjs
 node feedback/repro/nonfinite-pagination.mjs
+node feedback/repro/wbtc-doc-example.mjs
 ```
 
 The scripts require internet access to the documented testnet services. They supply no signer and do not broadcast transactions. The pagination reproduction scopes every query to one public account and pool. Returned counts and mark-dependent amounts may change with live data.

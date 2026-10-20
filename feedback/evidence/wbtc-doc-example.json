@@ -1,0 +1,26 @@
+{
+  "sdk": "0.32.1",
+  "chainId": 50383,
+  "indexerUrl": "https://hideki-dev.smk.somnia.host/v1/graphql",
+  "scope": "read-only reproduction of SDK docs/PERPS.md one-shot example",
+  "checks": [
+    {
+      "name": "documented WBTC query",
+      "count": 0
+    },
+    {
+      "name": "documented dereference",
+      "error": {
+        "name": "TypeError",
+        "message": "Cannot read properties of undefined (reading 'id')"
+      }
+    },
+    {
+      "name": "BTC control",
+      "count": 1,
+      "symbols": [
+        "BTC"
+      ]
+    }
+  ]
+}
